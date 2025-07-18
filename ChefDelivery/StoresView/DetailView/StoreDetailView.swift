@@ -15,9 +15,8 @@ struct StoreDetailView: View {
     var body: some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading) {
-                HeaderDetailView(store: store)
-                BodyDetailView(store: store)
-                ProductListDetailView(store: store)
+                StoreDetailHeaderView(store: store)
+                StoreDetailProductsView(store: store)
             }
             .navigationTitle(store.name)
             .navigationBarTitleDisplayMode(.inline)
